@@ -6,7 +6,8 @@
 #include <linux/kvm_host.h>
 #include <asm/kvm_host.h>
 
-#define PFERR_GUEST_ENC_MASK 1
+#define PFERR_GUEST_ENC_BIT	34
+#define PFERR_GUEST_ENC_MASK	BIT_ULL(PFERR_GUEST_ENC_BIT)
 
 #undef MMU_DEBUG
 
